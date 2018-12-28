@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Android111u</string>
+    <string name="txtViewStr">血液型を選択してくださり。</string>
+    <string name="btnNextStr">占う</string>
+    <string name="txtStr" />
+    <string name="btnAgainStr">もう一度占う</string>
+
+    <string-array name="spBloodType">
+        <item>A型</item>
+        <item>B型</item>
+        <item>AB型</item>
+        <item>O型</item>
+    </string-array>
+
+</resources>

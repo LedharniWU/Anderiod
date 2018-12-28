@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Android105</string>
+    <string name="cbxSample">教科書を持ってきている</string>
+    <string name="btnCheck">やる気確認</string>
+    <string name="tbtnSampleOffStr">ノート無し</string>
+    <string name="tbtnSampleOnStr">ノート有り</string>
+    <string name="rbtIOSst">iOSが得意</string>
+    <string name="rbtAndroidStr">Androidが得意</string>
+</resources>

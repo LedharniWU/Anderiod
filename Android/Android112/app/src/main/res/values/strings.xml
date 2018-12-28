@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Android112</string>
+    <string name="txtWelcomeStr">ようこそ「名無し」さん！</string>
+    <string name="txtUserSetting">ユーザ名設定・変更はこちら。</string>
+    <string name="userNameStr">プレイヤーの名前を入力してください</string>
+    <string name="editNameStr" />
+    <string name="txtQuiz" />
+</resources>

@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">SampleListView</string>
+    <string name="titleEditStr">タイトルを入力してください。</string>
+    <string name="btnTitleInput">入力</string>
+    <string name="titleStr" />
+    <string name="btnMemoInputStr">送信</string>
+</resources>

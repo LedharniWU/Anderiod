@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Android108</string>
+    <string name="textViewStr">定価</string>
+    <string name="txtPrice">0</string>
+    <string name="textView2Str">割引率</string>
+    <string name="textView3Str">支払い金額</string>
+</resources>

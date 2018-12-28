@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">RouletteGameCon</string>
+    <string name="costTxtStr">cost:</string>
+    <string name="costTextStr">0</string>
+    <string name="winTxtStr">Win:</string>
+    <string name="winTxtIdStr">0</string>
+    <string name="bateStr">Bate:</string>
+    <string name="bateTxtIdstr">0</string>
+    <string name="paymentBtnTxt">Payment</string>
+    <string name="winBtnStr">Win</string>
+    <string name="loseBtnStr">Lose</string>
+</resources>

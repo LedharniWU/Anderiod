@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Android109h</string>
+    <string name="txtTitleStr">HitAndBlowGame</string>
+    <string name="txtCounterStr">１回目の挑戦</string>
+    <string name="txtEnterStr">XXXX</string>
+    <string name="txtJudgeStr">判定：</string>
+</resources>

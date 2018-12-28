@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Android104</string>
+    <string name="txtTotalPay">支払額：</string>
+    <string name="btnCalc">計算実行</string>
+    <string name="txtView4">集金金額　:</string>
+    <string name="txtView6">幹事支払額:</string>
+    <string name="edtTotalpay">金額を入力してください</string>
+    <string name="hanging"></string>
+    <string name="rbt100Str">100円</string>
+    <string name="rbt500Str">500円</string>
+    <string name="rbt1000Str">1000円</string>
+    <string name="modoOff">幹事得モードOff</string>
+    <string name="modoOn">幹事得モードOn</string>
+    <string name="cbx2JikaiStr">二次会有り</string>
+    <string name="txtZankinStr">残金</string>
+    <string-array name="humen_str">
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+    </string-array>
+
+</resources>

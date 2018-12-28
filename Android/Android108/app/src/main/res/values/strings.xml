@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Android108</string>
+    <string name="txtTitleStr">爆弾ゲーム</string>
+    <string name="btn1">1</string>
+    <string name="txtMassageStr">どれか押してみよう！</string>
+    <string name="resetBtnStr">再戦</string>
+</resources>

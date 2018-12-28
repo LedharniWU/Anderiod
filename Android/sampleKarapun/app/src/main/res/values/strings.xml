@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">sampleKarapun</string>
+    <string name="txtGachaStr">ガチャ</string>
+    <string name="onceGatyaStr">一回ガチャ</string>
+    <string name="rbnTenGatyaStr">十回ガチャ</string>
+    <string name="starOneTextStr">星1</string>
+    <string name="starOneEditStr" />
+    <string name="starTwoTextStr">星2</string>
+    <string name="starTwoEditStr" />
+    <string name="starThreeTextStr">星3</string>
+    <string name="starFourText">星4</string>
+    <string name="starFiveText">星5</string>
+    <string name="StarFourEditStr" />
+    <string name="StarFiveEditStr" />
+    <string name="starThreeEditStr" />
+    <string name="buttonStr">ガチャ</string>
+    <string name="GatyaTxtStr">0回ガチャ</string>
+    <string name="starOneTxtStr">0 回 :0 %</string>
+    <string name="starTwoTxtStr">0 回 :0 %</string>
+    <string name="starThreeTxtStr">0 回 :0 %</string>
+    <string name="starFourTxtStr">0 回 :0 %</string>
+    <string name="starFiveTxtStr">0 回 :0 %</string>
+    <string name="resetBtnStr">Reset</string>
+    <string-array name="katyaStr">
+        <item>フレンドガチャ</item>
+        <item>レアガチャ</item>
+    </string-array>
+</resources>

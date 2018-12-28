@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Android109</string>
+    <string name="btnSaveStr">Save</string>
+    <string name="btnLoadStr">Load</string>
+    <string name="txtMemoListStr" />
+    <string name="btnAddStr">ADD</string>
+    <string name="edtMemoStr" />
+</resources>
