@@ -1,2 +1,2 @@
 # schoolTask
-iOS,Android Mobile Application
+Android Mobile Application
