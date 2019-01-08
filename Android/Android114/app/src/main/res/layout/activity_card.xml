@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.guest.cm0104.android114.CardActivity">
+
+    <TextView
+        android:id="@+id/txtEnglish"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:text="@string/txtEnglishStr"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/btnAnswer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onClickShowAnswer"
+        android:text="@string/btnAnswerStr" />
+
+    <TextView
+        android:id="@+id/txtJapanese"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:text="@string/txtJapaneseStr"
+        android:textSize="24sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnPrev"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="onClickPrev"
+            android:text="@string/btnPrevStr" />
+
+        <Button
+            android:id="@+id/btnNext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="onClickNext"
+            android:text="@string/btnNextStr" />
+    </LinearLayout>
+
+</LinearLayout>

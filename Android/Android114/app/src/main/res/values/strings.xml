@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Android114</string>
+    <string name="btnStartStr">Start</string>
+    <string name="btnEditStr">Edit</string>
+    <string name="txtEnglishStr">Apple</string>
+    <string name="btnAnswerStr">Show Answer</string>
+    <string name="txtJapaneseStr">りんご</string>
+    <string name="btnPrevStr">Prev</string>
+    <string name="btnNextStr">Next</string>
+    <string name="btnAddStr">Add</string>
+    <string name="btnCloseStr">Close</string>
+</resources>
