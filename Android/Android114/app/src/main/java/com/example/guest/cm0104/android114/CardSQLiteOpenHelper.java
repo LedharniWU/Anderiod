@@ -1,5 +1,6 @@
 package com.example.guest.cm0104.android114;
 
+import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
@@ -12,6 +13,7 @@ import java.util.ArrayList;
  */
 
 public class CardSQLiteOpenHelper extends SQLiteOpenHelper {
+
     public CardSQLiteOpenHelper(Context context) {
         super(context, "CARD_DB", null, 1);
     }
@@ -45,5 +47,66 @@ public class CardSQLiteOpenHelper extends SQLiteOpenHelper {
             db.close();
         }
         return ary;
+    }
+
+    public ArrayList<String> getAllCardTitle(){
+        ArrayList<String> ary = new ArrayList<String>();
+        SQLiteDatabase db = getReadableDatabase();
+        if(db == null) return null;
+        try {
+            Cursor cur = db.query("CARD",new String[]{"english"},null,null,null,null,null);
+            while (cur.moveToNext()){
+                ary.add(cur.getString(0));
+            }
+            cur.close();
+        }finally {
+            db.close();
+        }
+        return ary;
+    }
+
+    public ArrayList<String> getAllCardId(){
+        ArrayList<String> ary = new ArrayList<String>();
+        SQLiteDatabase db = getReadableDatabase();
+        if(db == null) return null;
+        try {
+            Cursor cur = db.query("CARD",new String[]{"_id"},null,null,null,null,null);
+            while (cur.moveToNext()){
+                ary.add(cur.getString(0));
+            }
+            cur.close();
+        }finally {
+            db.close();
+        }
+        return ary;
+    }
+
+
+
+    public boolean insertCard(Card src){
+
+        long ret = -1;
+
+        SQLiteDatabase db = getWritableDatabase();
+        try {
+            ContentValues values = new ContentValues();
+            values.put("japanese",src.getJapanese());
+            values.put("english",src.getEnglish());
+
+            ret = db.insert("CARD",null,values);
+        }finally {
+            db.close();
+        }
+        return ret != -1 ;
+    }
+
+    public void deleteCardById(int id){
+        SQLiteDatabase db = getWritableDatabase();
+        try {
+            String sid = String.valueOf(id);
+            db.delete("CARD","_id=?",new String[]{sid});
+        }finally {
+            db.close();
+        }
     }
 }

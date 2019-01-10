@@ -53,7 +53,7 @@ public class MainActivity extends AppCompatActivity {
         SQLiteDatabase database = helper.getWritableDatabase();
 
         ContentValues values = new ContentValues();
-        values.put("name", editText.getText().toString());
+        values.put("hi", editText.getText().toString());
 
         long result = database.insert("SAMPLE_TABLE", null, values);
         Log.v("Android114","result:" + result);

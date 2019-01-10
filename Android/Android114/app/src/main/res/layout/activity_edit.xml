@@ -59,12 +59,14 @@
         android:id="@+id/btnAdd"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:onClick="onClickAdd"
         android:text="@string/btnAddStr" />
 
     <Button
         android:id="@+id/btnClose"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:onClick="onClickClose"
         android:text="@string/btnCloseStr" />
 
 </LinearLayout>

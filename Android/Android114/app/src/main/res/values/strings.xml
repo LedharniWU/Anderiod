@@ -9,4 +9,7 @@
     <string name="btnNextStr">Next</string>
     <string name="btnAddStr">Add</string>
     <string name="btnCloseStr">Close</string>
+    <string name="txtCardListStr">登録済み単語一覧</string>
+    <string name="txtCardEmpty">データが存在しません</string>
+    <string name="btnListStr">LIst</string>
 </resources>

@@ -22,4 +22,9 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void getListAction(View view){
+        Intent intent = new Intent(MainActivity.this,CardListActivity.class);
+        startActivity(intent);
+    }
+
 }
