@@ -17,7 +17,7 @@ import java.util.ArrayList;
 public class CardListActivity extends ListActivity{
 
     CardSQLiteOpenHelper helper;
-    ArrayList<String> ary ;
+    private ArrayList<String> ary = new ArrayList<>() ;
     ArrayAdapter<String> adapter;
 
     @Override
@@ -26,7 +26,7 @@ public class CardListActivity extends ListActivity{
         setContentView(R.layout.activity_card_list);
 
         helper = new CardSQLiteOpenHelper(this);
-        ary = helper.getAllCardTitle();
+        helper.getAllCardTitle(ary);
         adapter = new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1,ary);
         setListAdapter(adapter);
     }
@@ -49,7 +49,7 @@ public class CardListActivity extends ListActivity{
                     public void onClick(DialogInterface dialog, int which) {
 
                         helper.deleteCardById(Integer.valueOf(helper.getAllCardId().get(position)));
-                        ary =helper.getAllCardTitle();
+                        helper.getAllCardTitle(ary);
                         adapter = new ArrayAdapter<String>(CardListActivity.this,android.R.layout.simple_list_item_1,ary);
                         setListAdapter(adapter);
 

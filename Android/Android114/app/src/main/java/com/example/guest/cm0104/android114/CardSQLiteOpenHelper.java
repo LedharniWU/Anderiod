@@ -49,10 +49,10 @@ public class CardSQLiteOpenHelper extends SQLiteOpenHelper {
         return ary;
     }
 
-    public ArrayList<String> getAllCardTitle(){
-        ArrayList<String> ary = new ArrayList<String>();
+    public void getAllCardTitle(ArrayList<String> ary){
+        ary.clear();
         SQLiteDatabase db = getReadableDatabase();
-        if(db == null) return null;
+        if(db == null) return;
         try {
             Cursor cur = db.query("CARD",new String[]{"english"},null,null,null,null,null);
             while (cur.moveToNext()){
@@ -62,7 +62,6 @@ public class CardSQLiteOpenHelper extends SQLiteOpenHelper {
         }finally {
             db.close();
         }
-        return ary;
     }
 
     public ArrayList<String> getAllCardId(){
