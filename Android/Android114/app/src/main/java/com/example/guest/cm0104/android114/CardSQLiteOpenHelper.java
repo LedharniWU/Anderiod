@@ -64,6 +64,24 @@ public class CardSQLiteOpenHelper extends SQLiteOpenHelper {
         }
     }
 
+    public Card findCardByName(String english){
+        Card tmp = null;
+        SQLiteDatabase db = getReadableDatabase();
+        try{
+            String[] column = new String[]{"japanese","english","_id"};
+            Cursor cur = db.query("CARD",column,"english=?",new String[]{english},null,null,null);
+
+            if(cur.moveToNext()){
+                tmp = new Card(cur.getString(0),cur.getString(1),cur.getInt(2));
+            }
+            cur.close();
+        } finally {
+            db.close();
+        }
+        return tmp;
+    }
+
+
     public ArrayList<String> getAllCardId(){
         ArrayList<String> ary = new ArrayList<String>();
         SQLiteDatabase db = getReadableDatabase();
@@ -80,7 +98,38 @@ public class CardSQLiteOpenHelper extends SQLiteOpenHelper {
         return ary;
     }
 
+    public Card findCardById(int id){
+        Card tmp = null;
+        SQLiteDatabase db = getReadableDatabase();
+        try{
+            String sid = String.valueOf(id);
+            String[] column = new String[]{"japanese","english","_id"};
+            Cursor cur = db.query("CARD",column,"_id=?",new String[]{sid},null,null,null);
 
+            if(cur.moveToNext()){
+                tmp = new Card(cur.getString(0),cur.getString(1),cur.getInt(2));
+            }
+            cur.close();
+        } finally {
+            db.close();
+        }
+        return tmp;
+    }
+
+    public boolean updateCard(Card newCard){
+        long ret;
+        SQLiteDatabase db = getWritableDatabase();
+        try {
+            ContentValues values = new ContentValues();
+            values.put("english",newCard.getEnglish());
+            values.put("japanese",newCard.getJapanese());
+            String sid = String.valueOf(newCard.getId());
+            ret = db.update("CARD",values,"_id=?",new String[]{sid});
+        }finally {
+            db.close();
+        }
+        return ret != -1;
+    }
 
     public boolean insertCard(Card src){
 

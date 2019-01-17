@@ -19,6 +19,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void btnEditClick(View view){
         Intent intent = new Intent(MainActivity.this,EditActivity.class);
+        intent.putExtra("mode","add");
         startActivity(intent);
     }
 
